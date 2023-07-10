@@ -13,12 +13,14 @@
       margin: 3rem;
       display: flex;
       flex-wrap: wrap;
+      text-align:center;
     }
-    h1 {
-      color: #b58900 /* #2aa198 */;
+    body {
+      margin: 0 auto;
+      width: 70%;
     }
-    h2 {
-      color: #b58900 /* # */;
+    h1, h2 {
+      color: #b58900;
     }
     a {
       color: #2aa198;
@@ -29,7 +31,7 @@
       border-width: 1px;
       border-radius: 50%;
       margin-top: 2rem;
-      margin-bottom: 2rem;
+      margin-bottom: 3rem;
     }
     .break {
       flex-basis: 100%;
@@ -39,6 +41,10 @@
       margin-bottom: 1rem;
       margin-top: 1rem;
     }
+    .pj-list {
+      margin-top: 3rem;
+      text-align: left;
+    }
   </style>
 </head>
   <body>
@@ -46,8 +52,7 @@
     <img class="logo" src="./logo.png"></img>
     <div class="break"></div> <!-- break -->
     VC backed company building <a href="https://github.com/alantech">open source</a> developer tools
-    <h2>projects</h2>
-    <dl>
+    <dl class='pj-list'>
       <dt><a href="https://github.com/alantech/marsha">marsha</a></dt>
       <dd>A higher-level programming language that is compiled to Python by LLMs</dd>
       <dt><a href="https://github.com/alantech/sqlpal">sql pal</a></dt>
@@ -57,8 +62,7 @@
       <dt><a href="https://github.com/alantech/anycloud">anycloud</a></dt>
       <dd>Framework scales an HTTP server + container in any public cloud</dd>
       <dt><a href="https://alan-lang.org">alan language</a></dt>
-      <dd>An almost Turing complete language with a VM that automatically does concurrency and parallelization</dd>
+      <dd>An almost Turing complete language that does concurrency and parallelization automatically</dd>
     </dl>
-
   </body>
 </html>
